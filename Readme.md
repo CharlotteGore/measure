@@ -31,7 +31,7 @@
 
   The position of the element relative to its offset parent.
 
-    var position = measurer.innerPosition();
+    var boxDetails = measurer.boxDetails();
 
   Returns an object with properties `border` and `margin` and `padding`. Each contains an object with the properties, `top`, `left`, `bottom` and `right`
 
@@ -39,7 +39,7 @@
  
   The size of the object, not including borders, margin or padding.
 
-    var position = measurer.innerSize();
+    var size = measurer.innerSize();
 
   Returns an object with properties `x` and `y` 
 
@@ -47,7 +47,7 @@
  
   The size of the object, including borders, margin or padding.
 
-    var position = measurer.outerSize();
+    var size = measurer.outerSize();
 
   Returns an object with properties `x` and `y` 
 

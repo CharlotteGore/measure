@@ -17,7 +17,7 @@
 
     var position = measurer.pagePosition();
 
-    Returns an object with properties `x` and `y`
+  Returns an object with properties `x` and `y`
 
 ### .innerPosition()
 
@@ -25,7 +25,7 @@
 
     var position = measurer.innerPosition();
 
-    Returns an object with properties `x` and `y`
+  Returns an object with properties `x` and `y`
 
 ### .boxDetails()
 
@@ -33,7 +33,7 @@
 
     var position = measurer.innerPosition();
 
-    Returns an object with properties `border` and `margin` and `padding`. Each contains an object with the properties, `top`, `left`, `bottom` and `right`
+  Returns an object with properties `border` and `margin` and `padding`. Each contains an object with the properties, `top`, `left`, `bottom` and `right`
 
 ### .innerSize()
  
@@ -41,7 +41,7 @@
 
     var position = measurer.innerSize();
 
-    Returns an object with properties `x` and `y` 
+  Returns an object with properties `x` and `y` 
 
 ### .outerSize()
  
@@ -49,7 +49,7 @@
 
     var position = measurer.outerSize();
 
-    Returns an object with properties `x` and `y` 
+  Returns an object with properties `x` and `y` 
 
 ## License
 

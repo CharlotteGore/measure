@@ -71,11 +71,16 @@ Measure.prototype = {
 
     var curleft = 0, curtop = 0, e = this.el;
 
+        var m = this.boxDetails().margin;
+
     if (e.offsetParent) {
       do {
         curleft += e.offsetLeft;
         curtop += e.offsetTop;
       } while (e = e.offsetParent);
+
+      curleft -= m.left;
+      curtop -= m.top;
 
       return {x : curleft, y : curtop};
     }
@@ -84,7 +89,7 @@ Measure.prototype = {
 
   innerPosition : function(){
 
-    var m = boxDetails.margin;
+    var m = this.boxDetails().margin;
 
     var xOffset = m.left;
     var yOffset = m.top;  
@@ -97,7 +102,7 @@ Measure.prototype = {
     return {x : curleft, y : curtop};
 
   },
-
+  
   boxDetails : function(){
 
     return getBoxDetail( this.el );
